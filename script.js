@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     function EncriptarTexto(){
         var texto = document.querySelector(".input-texto").value;
-        console.log(texto);
         if (texto == "" || texto == null) {
             document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png"/>
             <p>Ningun Mensaje fue encontrado</p>
@@ -28,7 +27,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     function DesencriptarTexto(){
         var texto = document.querySelector(".input-texto").value;
-        console.log(texto);
         if (texto == "" || texto == null) {
             document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png"/>
             <p>Ningun Mensaje fue encontrado</p>

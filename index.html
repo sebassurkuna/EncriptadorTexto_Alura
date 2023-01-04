@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Encriptador de texto - Reto Alura</title>
 </head>
 <body>
     <div class="container">
+        <img src="resources/logoAlura.png" alt="Logo Alura" class="logo-Alura">
         <section class="Texto-Encriptar">
-            <img src="resources/logoAlura.png" alt="Logo Alura">
-            <input type="text" class="input-texto"/>
-            <p>Solo letras minúsculas y si acentos</p>
-            <button class="encriptar-texto">Encriptar</button>
-            <button class="desencriptar-texto">Desencriptar</button>
+            <textarea type="text" class="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+            <p><span class="material-symbols-outlined" id="warning">error</span>Solo letras minúsculas y si acentos</p>
+            <div class="botones">
+                <button class="encriptar-texto">Encriptar</button>
+                <button class="desencriptar-texto">Desencriptar</button>
+            </div>
         </section>
         <section class="Texto-Desencriptar">
-            <img src="resources/Muñeco.png"/>
-            <p>Ningun Mensaje fue encontrado</p>
-            <p>Ingrese el texto que desee encriptar o desencriptar</p>
+            <img src="resources/Muñeco.png" class="muneco"/>
+            <p class="ningun-sms">Ningun mensaje fue encontrado</p>
+            <p class="ingrese-texto">Ingrese el texto que desee encriptar o desencriptar</p>
         </section>
     </div>
 </body>
-<script src="script.js"></script>
 </html>
