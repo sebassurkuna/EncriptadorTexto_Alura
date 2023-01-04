@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded",()=>{
     function EncriptarTexto(){
         var texto = document.querySelector(".input-texto").value;
         if (texto == "" || texto == null) {
-            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png"/>
-            <p>Ningun Mensaje fue encontrado</p>
-            <p>Ingrese el texto que desee encriptar o desencriptar</p>`;
+            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png" class="muneco"/>
+            <p class="ningun-sms">Ningun mensaje fue encontrado</p>
+            <p class="ingrese-texto">Ingrese el texto que desee encriptar o desencriptar</p>`;
             return false;
         }
         if(!ValidadorMinusculasCaracteres(texto)){
-            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png"/>
-            <p>Texto erroeno! Recuerde que no se permiten mayúsculas ni caracteres especiales</p>
-            <p>Ingrese el texto que desee encriptar o desencriptar</p>`;
+            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png" class="muneco"/>
+            <p class="ningun-sms">Texto erroeno!<br>Recuerde que no se permiten mayúsculas ni caracteres especiales</p>
+            <p class="ingrese-texto">Ingrese el texto que desee encriptar o desencriptar</p>`;
             return false;
         }
         var textoEncriptado = Encriptador(texto);
@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded",()=>{
     function DesencriptarTexto(){
         var texto = document.querySelector(".input-texto").value;
         if (texto == "" || texto == null) {
-            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png"/>
-            <p>Ningun Mensaje fue encontrado</p>
-            <p>Ingrese el texto que desee encriptar o desencriptar</p>`;
+            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png" class="muneco"/>
+            <p class="ningun-sms">Ningun mensaje fue encontrado</p>
+            <p class="ingrese-texto">Ingrese el texto que desee encriptar o desencriptar</p>`;
             return false;
         }
         if(!ValidadorMinusculasCaracteres(texto)){
-            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png"/>
-            <p>Texto erroeno! Recuerde que no se permiten mayúsculas ni caracteres especiales</p>
-            <p>Ingrese el texto que desee encriptar o desencriptar</p>`;
+            document.querySelector(".Texto-Desencriptar").innerHTML=`<img src="resources/Muñeco.png" class="muneco"/>
+            <p class="ningun-sms">Texto erroeno!<br>Recuerde que no se permiten mayúsculas ni caracteres especiales</p>
+            <p class="ingrese-texto">Ingrese el texto que desee encriptar o desencriptar</p>`;
             return false;
         }
         var textoEncriptado = Desencriptador(texto);
