@@ -75,18 +75,18 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     function Desencriptador(texto){
         var textoDesencriptado=""; 
-       textoDesencriptado = texto.replace("ai",'a');
-       textoDesencriptado = textoDesencriptado.replace("enter","e");
-       textoDesencriptado = textoDesencriptado.replace("imes","i");
-       textoDesencriptado = textoDesencriptado.replace("ober","o");
-       textoDesencriptado = textoDesencriptado.replace("ufat","u");
+       textoDesencriptado = texto.replace(/ai/g,'a');
+       textoDesencriptado = textoDesencriptado.replace(/enter/g,"e");
+       textoDesencriptado = textoDesencriptado.replace(/imes/g,"i");
+       textoDesencriptado = textoDesencriptado.replace(/ober/g,"o");
+       textoDesencriptado = textoDesencriptado.replace(/ufat/g,"u");
         return textoDesencriptado;
     }
 
     function ValidadorMinusculasCaracteres(texto){
         var validacion = true;
         texto.split("").forEach(e=>{
-            if(e.charCodeAt() <97 || e.charCodeAt()>122){
+            if((e.charCodeAt() <97 || e.charCodeAt()>122) && e.charCodeAt()!=32){
                 validacion = false;
             }
         });
