@@ -1,0 +1,290 @@
+body{
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+header{
+    text-align: center;
+    box-shadow: inset 0px 0px 30px -30px rgb(0 0 0 / 75%);
+}
+
+header h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: #0A3871;
+    padding: 2% 0;
+}
+
+header h2{
+    font-size: 24px;
+    color: #495057;
+    font-weight: 500;
+    padding: 2% 0;
+}
+
+.container{
+    max-width: 1440px;
+    max-height: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+}
+
+.logo-Alura{
+    margin: 3% 3% 100% 3%;
+    height: 1%;
+    position: revert;
+}
+
+.Texto-Encriptar{
+    width: 60%;
+    margin: 10% 0 0 0;
+}
+
+.input-texto{
+    width: 90%;
+    border: none;
+    background: none;
+    padding: 5% 5%;
+    height: 70%;
+    font-size: 32px;
+    resize: none;
+    color: #0A3871;
+}
+
+.input-texto:focus{
+    outline: none;
+}
+
+#warning{
+    font-size: 12px;
+    margin: 0 1% 0 0;
+}
+
+.botones{
+    display: flex;
+    margin: 2% 0;
+}
+
+.encriptar-texto{
+    width: 50%;
+    padding: 3% 0;
+    font-size: 16px;
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    margin: 1% 1%;
+}
+
+.encriptar-texto:hover{
+    cursor: pointer;
+}
+
+.desencriptar-texto{
+    width: 50%;
+    padding: 3% 0;
+    font-size: 16px;
+    background: none;
+    color: #0A3871;
+    border-radius: 24px;
+    margin: 1% 1%;
+}
+
+.desencriptar-texto:hover{
+    cursor: pointer;
+}
+
+.Texto-Desencriptar{
+    width: 30%;
+    margin: 2% 2%;
+    background: white;
+    border-radius: 32px;
+    padding: 3% 3%;
+}
+
+.muneco{
+    margin-top: 50%;
+    width: 100%;
+}
+
+.ningun-sms{
+    text-align: center;
+    font-size: 24px;
+    margin: 10% 0;
+    font-weight: bold;
+    color: #343A40;
+}
+
+.ingrese-texto{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #495057;
+}
+
+.texto-mostrar{
+    font-size: 24px;
+    color: #495057;
+    height: 91.8%;
+}
+
+.copiar-texto{
+    width: 100%;
+    padding: 6%;
+    background: none;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+.copiar-texto:hover{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    display: block;
+    padding: 2% 0 5% 0;
+    box-shadow: inset 0px 0px 30px -30px rgb(0 0 0 / 75%);
+}
+
+footer h1{
+    font-size: 24px;
+    color: darkgray;
+    font-weight: bold;
+    padding: 2% 0;
+}
+
+footer a{
+    padding: 2% 0;
+    font-size: 20px;
+}
+
+footer img{
+    width: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
+@media screen and (max-width:769px) {
+    body .container{
+        max-width: 768px;
+        display: block;
+        max-height: max-content;
+    }
+
+    .logo-Alura{
+        margin: 3% 3% 0 5%;
+    }
+
+    .input-texto{
+        height: 250px;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .Texto-Encriptar{
+        width: 100%;
+    }
+
+    .Texto-Desencriptar{
+        width: 90%;
+        margin: 10% auto;
+        padding: 5% 0;
+
+    }
+
+    .ningun-sms{
+        margin: 0 0 3% 0;
+    }
+
+    .botones{
+        margin: 2% 5%;
+    }
+
+    .mensaje-restriccion{
+        margin-left: 5%;
+    }
+
+    .texto-mostrar{
+        margin: 0 5% 5% 5%;
+    }
+
+    .copiar-texto{
+        width: 90%;
+        padding: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    body .container{
+        max-width: 375px;
+        display: block;
+        max-height: max-content;
+    }
+
+    .logo-Alura{
+        margin: 3% 3% 0 5%;
+    }
+
+    .input-texto{
+        height: 250px;
+    }
+    .muneco{
+        display: none;
+    }
+
+    .Texto-Encriptar{
+        width: 100%;
+    }
+
+    .Texto-Desencriptar{
+        width: 90%;
+        margin: 10% auto;
+        padding: 5% 0;
+
+    }
+
+    .ningun-sms{
+        margin: 0 0 3% 0;
+    }
+
+    .botones{
+        margin: 2% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones button{
+        width: 90%;
+        padding: 5% 0;
+        margin: 5% 0;
+    }
+
+    .mensaje-restriccion{
+        margin-left: 5%;
+    }
+
+    .texto-mostrar{
+        margin: 0 5% 5% 5%;
+    }
+
+    .copiar-texto{
+        width: 90%;
+        padding: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+}
